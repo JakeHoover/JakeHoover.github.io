@@ -47,8 +47,13 @@ a { color: var(--accent); text-underline-offset: 0.15em; }
     text-decoration: none;
 }
 
+.site-header nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.25rem 1.25rem;
+}
+
 .site-header nav a {
-    margin-left: 1.25rem;
     color: var(--muted);
     text-decoration: none;
 }
@@ -144,4 +149,20 @@ article .body { margin-top: 1.5rem; }
 @media (max-width: 30rem) {
     .posters li { flex-direction: column; }
     .posters img { width: 100%; }
+}
+
+/* Headshot */
+.hero { display: flex; align-items: center; gap: 1.75rem; }
+.headshot {
+    flex: 0 0 auto;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 1px solid var(--border);
+}
+
+@media (max-width: 30rem) {
+    .hero { flex-direction: column; align-items: flex-start; gap: 1rem; }
+    .headshot { width: 8rem; height: 8rem; }
 }
