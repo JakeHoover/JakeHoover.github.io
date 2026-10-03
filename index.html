@@ -20,26 +20,34 @@
 
     <main id="top">
         <section class="hero">
-            <h1>Hi, I'm Jake.</h1>
-            <p class="lead">A PhD student that cannot seem to find enough coffee.</p>
+            <img class="headshot" src="images/headshot.jpg" alt="Photo of Jake Hoover" width="160" height="160">
+            <div>
+                <h1>Hi, I'm Jake.</h1>
+                <p class="lead">PhD student in Mathematical and Statistical Sciences at the University of Alberta.</p>
+            </div>
         </section>
 
         <section id="about">
             <h2>About</h2>
-            <p>Write a short bio here: who you are, where you are, what you work on, and what you're curious about. Two or three short paragraphs is plenty.</p>
-            <p>As the old saying goes, motion is lotion. If I'm not working you can find me doing some sort of physical activity.</p>
+            <p>I'm a PhD student in the Department of Mathematical and Statistical Sciences at the University of Alberta in Edmonton, where I also completed my BSc and MSc. My research is on hidden Markov and hidden semi-Markov models for time series, including extensions to functional data.</p>
+            <p>I work as a research assistant fitting hidden semi-Markov models to sleep (polysomnography) data, and as a teaching assistant and statistical consultant with the university's Training and Consulting Centre. I also tutor university and high school students in statistics and mathematics.</p>
+            <p>My poster on sieve-estimated functional autoregressive HMMs won Best PhD Poster at the 2026 Meeting of Alberta Statisticians.</p>
         </section>
 
         <section id="projects">
             <h2>Research &amp; Projects</h2>
             <ul class="cards">
                 <li>
-                    <h3><a href="#">Project title</a></h3>
-                    <p>One or two sentences on what it is and why it matters.</p>
+                    <h3><a href="posters/dwell-time-hsmm-classification-society-2026.pdf">General dwell time hidden semi-Markov models</a></h3>
+                    <p>Is it worth the extra complexity of choosing a sojourn distribution for each state? A simulation study comparing HSMMs using optimal transport (Wasserstein) distances.</p>
                 </li>
                 <li>
-                    <h3><a href="#">Another project</a></h3>
-                    <p>A short description, with a link to the paper, repo, or demo.</p>
+                    <h3><a href="posters/sifarhmm-alberta-statisticians-2026.pdf">Sieve-estimated functional autoregressive HMM</a></h3>
+                    <p>A hidden Markov model for functional time series whose regimes differ in autoregressive persistence rather than level.</p>
+                </li>
+                <li>
+                    <h3>HSMMs for sleep data</h3>
+                    <p>Fitting hidden semi-Markov models to polysomnography data sets, with an interdisciplinary team of sleep experts.</p>
                 </li>
             </ul>
         </section>
@@ -50,8 +58,7 @@
     <footer class="site-footer">
         <p>
             <a href="https://github.com/JakeHoover">GitHub</a> ·
-            <a href="#">LinkedIn</a> ·
-            <a href="#">Email</a>
+            <a href="https://www.linkedin.com/in/jake-hoover-alberta">LinkedIn</a>
         </p>
         <p class="muted">&copy; <span id="year">2026</span> Jake Hoover</p>
     </footer>
