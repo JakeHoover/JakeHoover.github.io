@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Blog | Jake Hoover</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header">
+        <a class="brand" href="index.html">Jake Hoover</a>
+        <nav>
+            <a href="index.html#about">About</a>
+            <a href="index.html#projects">Projects</a>
+            <a href="publications.html">Publications</a>
+            <a href="blog.html" aria-current="page">Blog</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-title">
+            <h1>Blog</h1>
+        </section>
+        <section>
+            <ul class="posts">
+                <li>
+                    <time datetime="2026-10-03">Oct 3, 2026</time>
+                    <a href="posts/hello-world.html">Hello, world</a>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p class="muted">&copy; <span id="year">2026</span> Jake Hoover</p>
+    </footer>
+
+    <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>
