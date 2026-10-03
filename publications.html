@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Publications and CV | Jake Hoover</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header">
+        <a class="brand" href="index.html">Jake Hoover</a>
+        <nav>
+            <a href="index.html#about">About</a>
+            <a href="index.html#projects">Projects</a>
+            <a href="publications.html" aria-current="page">Publications and CV</a>
+            <a href="blog.html">Blog</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-title">
+            <h1>Publications and CV</h1>
+            <p><a href="cv.pdf">Download my CV (PDF)</a></p>
+        </section>
+        <section>
+            <ol class="pubs">
+                <li>
+                    <span class="authors">Hoover, J.</span>
+                    <span class="title">Title of the paper.</span>
+                    <em>Journal or Venue</em>, 2025.
+                </li>
+            </ol>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p class="muted">&copy; <span id="year">2026</span> Jake Hoover</p>
+    </footer>
+
+    <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>

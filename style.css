@@ -117,3 +117,8 @@ article .body { margin-top: 1.5rem; }
     .hero h1 { font-size: 2.1rem; }
     .posts li { flex-direction: column; gap: 0; }
 }
+
+/* Subpages */
+.page-title { padding-top: 2.5rem; }
+.page-title h1 { margin: 0 0 0.5rem; font-size: 2rem; line-height: 1.2; }
+.site-header nav a[aria-current="page"] { color: var(--fg); font-weight: 600; }
