@@ -1,11 +1,81 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Jake's Website</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Jake Hoover</title>
+    <meta name="description" content="Personal website of Jake Hoover.">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Welcome to Jake's Website</h1>
-    <p>This is the default index.html page.</p>
+    <header class="site-header">
+        <a class="brand" href="#top">Jake Hoover</a>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#publications">Publications</a>
+            <a href="#blog">Blog</a>
+        </nav>
+    </header>
+
+    <main id="top">
+        <section class="hero">
+            <h1>Hi, I'm Jake.</h1>
+            <p class="lead">A one-line description of what you do or care about goes here.</p>
+        </section>
+
+        <section id="about">
+            <h2>About</h2>
+            <p>Write a short bio here: who you are, where you are, what you work on, and what you're curious about. Two or three short paragraphs is plenty.</p>
+            <p>Add a sentence or two on interests outside of work if you like.</p>
+        </section>
+
+        <section id="projects">
+            <h2>Research &amp; Projects</h2>
+            <ul class="cards">
+                <li>
+                    <h3><a href="#">Project title</a></h3>
+                    <p>One or two sentences on what it is and why it matters.</p>
+                </li>
+                <li>
+                    <h3><a href="#">Another project</a></h3>
+                    <p>A short description, with a link to the paper, repo, or demo.</p>
+                </li>
+            </ul>
+        </section>
+
+        <section id="publications">
+            <h2>Publications &amp; CV</h2>
+            <p><a href="cv.pdf">Download my CV (PDF)</a></p>
+            <ol class="pubs">
+                <li>
+                    <span class="authors">Hoover, J.</span>
+                    <span class="title">Title of the paper.</span>
+                    <em>Journal or Venue</em>, 2025.
+                </li>
+            </ol>
+        </section>
+
+        <section id="blog">
+            <h2>Blog</h2>
+            <ul class="posts">
+                <li>
+                    <time datetime="2026-10-03">Oct 3, 2026</time>
+                    <a href="posts/hello-world.html">Hello, world</a>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>
+            <a href="https://github.com/JakeHoover">GitHub</a> ·
+            <a href="#">LinkedIn</a> ·
+            <a href="#">Email</a>
+        </p>
+        <p class="muted">&copy; <span id="year">2026</span> Jake Hoover</p>
+    </footer>
+
+    <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
 </body>
 </html>
-
