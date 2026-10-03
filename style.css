@@ -122,3 +122,26 @@ article .body { margin-top: 1.5rem; }
 .page-title { padding-top: 2.5rem; }
 .page-title h1 { margin: 0 0 0.5rem; font-size: 2rem; line-height: 1.2; }
 .site-header nav a[aria-current="page"] { color: var(--fg); font-weight: 600; }
+
+/* Posters */
+.posters { list-style: none; margin: 0; padding: 0; }
+.posters li {
+    display: flex;
+    gap: 1.25rem;
+    align-items: flex-start;
+    padding: 1rem 0;
+    border-top: 1px solid var(--border);
+}
+.posters img {
+    display: block;
+    width: 12rem;
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--border);
+}
+.posters p { margin: 0 0 0.25rem; color: var(--muted); }
+
+@media (max-width: 30rem) {
+    .posters li { flex-direction: column; }
+    .posters img { width: 100%; }
+}
